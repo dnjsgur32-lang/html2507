@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹에서 유튜브 재생</title>
+    <style>
+#demo{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .back-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 6px 14px; 
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.7em;  
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;      /* 하단 고정 */
+            right: 20px;          /* 화면 오른쪽에서 20px 떨어짐 */
+            bottom: 20px;         /* 화면 하단에서 20px 떨어짐 */
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        div {
+            background-color: #fff4a3;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe width="420" height="345"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
+     <button class="back-button" onclick="history.back()">← 뒤로가기</button>
+    
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+#demo{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .back-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 6px 14px; 
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.7em;  
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;      /* 하단 고정 */
+            right: 20px;          /* 화면 오른쪽에서 20px 떨어짐 */
+            bottom: 20px;         /* 화면 하단에서 20px 떨어짐 */
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        div {
+            background-color: #fff4a3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Center align a DIV element</h1>
+
+    <div>
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+     <button class="back-button" onclick="history.back()">← 뒤로가기</button>
+</body>
+</html>
